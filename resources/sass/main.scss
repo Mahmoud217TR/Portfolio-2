@@ -1,0 +1,15 @@
+@import 'app.scss';
+
+body{
+    background-image: url('../../public/images/bg-black.svg');
+    background-size: cover;
+    color: $negative-color;
+}
+
+.logo{
+    color: $negative-color;
+}
+
+.nav-item{
+    color: $negative-color;
+}
