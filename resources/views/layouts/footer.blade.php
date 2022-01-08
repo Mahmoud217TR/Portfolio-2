@@ -15,9 +15,9 @@
             <div class="col d-sm-flex justify-content-between text-center">
                 <i>©2022 All Rights Reserved.</i>
                 <div class="link-icons mt-2 mt-sm-0">
-                    <a href="https://github.com/Mahmoud217TR"><img src="{{ asset('images/github.svg') }}" alt="github-link"></a>
-                    <a href="https://www.linkedin.com/in/mahmoud-mahmoud-ab8708183"><img src="{{ asset('images/linkedin.svg') }}" alt="linkedin-link"></a>
-                    <a href="https://facebook.com/mahmoud.mahmoud.927758"><img src="{{ asset('images/facebook.svg') }}" alt="facebook-link"></a>
+                    <a href="https://github.com/Mahmoud217TR" target="_blank"><img src="{{ asset('images/github.svg') }}" alt="github-link"></a>
+                    <a href="https://www.linkedin.com/in/mahmoud-mahmoud-ab8708183" target="_blank"><img src="{{ asset('images/linkedin.svg') }}" alt="linkedin-link"></a>
+                    <a href="https://facebook.com/mahmoud.mahmoud.927758" target="_blank"><img src="{{ asset('images/facebook.svg') }}" alt="facebook-link"></a>
                 </div>
             </div>
         </div>

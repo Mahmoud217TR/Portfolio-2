@@ -10,18 +10,33 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
+    <script>
+        window.addEventListener('load', (event) =>{
+            document.getElementById("loader-layer").classList.add('d-none');
+        });
+    </script>
 
     <!-- Styles -->
     <link href="{{ asset('css/secondary.css') }}" rel="stylesheet">
-    {{-- <link rel="shortcut icon" href="{{ asset('images/mtr.ico') }}" type="image/x-icon"> --}}
+    <link rel="shortcut icon" href="{{ asset('images/mtr.ico') }}" type="image/x-icon">
+
 </head>
 <body>
-    @include('layouts.nav')
-    <main class="container">
-        @yield('content')
-    </main>
-    @include('layouts.footer')
+    <div class="loader-layer" id="loader-layer">
+        <div class="d-block">
+            <span class="loader mx-auto"><span class="loader-inner"></span></span>
+        </div>
+        <div class="fulfilling-bouncing-circle-spinner">
+            <div class="circle"></div>
+            <div class="orbit"></div>
+        </div>
+    </div>
+    <div id ="app">
+        @include('layouts.nav')
+        <main class="container">
+            @yield('content')
+        </main>
+        @include('layouts.footer')
+    </div>
 </body>
 </html>

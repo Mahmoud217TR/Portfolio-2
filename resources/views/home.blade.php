@@ -19,7 +19,7 @@
                         </button>
                     </div>
                     <div class="col-lg-6 my-2 my-lg-0 p-0 d-flex justify-content-center justify-content-lg-start">
-                        <a href="#">
+                        <a href="{{ route('contact') }}">
                             <button class="secondary-button">
                                 <span class="pe-2"><img width="30pt" src="{{ asset('images/contacts.svg') }}" alt="download-icon"></span>
                                 Contact Me

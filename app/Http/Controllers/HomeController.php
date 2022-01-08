@@ -18,4 +18,8 @@ class HomeController extends Controller
     public function projects(){
         return view('projects');
     }
+
+    public function contact(){
+        return view('contact');
+    }
 }
