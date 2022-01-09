@@ -12231,6 +12231,63 @@ h2, .h2 {
     transform: scale(1);
   }
 }
+.form-control {
+  line-height: 2.2rem;
+  border: 0.125rem solid #000;
+  position: relative;
+}
+
+.form-control:focus {
+  border-color: #000 !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.form-control:not(:-moz-placeholder-shown) ~ label {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.5rem;
+  background-color: #f8fafc;
+  padding: 0 0.25rem;
+  opacity: 1;
+}
+
+.form-control:not(:-ms-input-placeholder) ~ label {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.5rem;
+  background-color: #f8fafc;
+  padding: 0 0.25rem;
+  opacity: 1;
+}
+
+.form-control:not(:placeholder-shown) ~ label {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.5rem;
+  background-color: #f8fafc;
+  padding: 0 0.25rem;
+  opacity: 1;
+}
+
+.text-control {
+  resize: none;
+  height: 12rem;
+}
+
+.floating-control {
+  position: relative;
+}
+
+.floating-label {
+  position: absolute;
+  opacity: 0;
+  top: 1rem;
+  left: 1.5rem;
+  background-color: #f8fafc;
+  padding: 0 0.25rem;
+  transition: 0.3s linear ease-in;
+}
+
 body {
   background-image: url(/images/bg-black.svg?f25d3ef4da97cc99ef8eda067052a28a);
   background-size: cover;

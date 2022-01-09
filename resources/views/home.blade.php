@@ -14,15 +14,15 @@
                 <div class="row">
                     <div class="col-lg-6 my-2 my-lg-0 p-0 d-flex justify-content-center justify-content-lg-start">
                         <button class="main-button">
-                            <span class="pe-2"><img width="18pt" src="{{ asset('images/download.svg') }}" alt="download-icon"></span>
-                            Download CV
+                            <span class="pe-2"><img width="18" src="{{ asset('images/download.svg') }}" alt="download-icon"></span>
+                            <span>Download CV</span>
                         </button>
                     </div>
                     <div class="col-lg-6 my-2 my-lg-0 p-0 d-flex justify-content-center justify-content-lg-start">
                         <a href="{{ route('contact') }}">
                             <button class="secondary-button">
-                                <span class="pe-2"><img width="30pt" src="{{ asset('images/contacts.svg') }}" alt="download-icon"></span>
-                                Contact Me
+                                <span class="pe-2"><img width="30" src="{{ asset('images/contacts.svg') }}" alt="download-icon"></span>
+                                <span>Contact Me</span>
                             </button>
                         </a>
                     </div>

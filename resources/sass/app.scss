@@ -343,3 +343,42 @@ h2{
       transform: scale(1);
     }
   }
+
+  .form-control{
+      line-height: 2.2rem;
+      border: .125rem solid $main-color;
+      position: relative;
+  }
+
+  .form-control:focus{
+      border-color: $main-color!important;
+      box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  }
+
+  .form-control:not(:placeholder-shown) ~ label{   
+        position: absolute;
+        top: -.75rem;
+        left: 1.5rem;
+        background-color: $negative-color;
+        padding: 0 0.25rem;
+        opacity: 1;
+  }
+
+  .text-control{
+    resize: none;
+    height: 12rem;
+  }
+
+  .floating-control{
+      position: relative;
+  }
+
+  .floating-label{
+      position: absolute;
+      opacity: 0;
+      top: 1rem;
+      left: 1.5rem;
+      background-color: $negative-color;
+      padding: 0 0.25rem;
+      transition: 0.3s linear ease-in;
+  }

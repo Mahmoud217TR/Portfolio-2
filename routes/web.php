@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PathController;
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[HomeController::class,'home'])->name('home');
-Route::get('/home',[HomeController::class,'home'])->name('home');
-Route::get('/about',[HomeController::class,'about'])->name('about');
-Route::get('/projects',[HomeController::class,'projects'])->name('projects');
-Route::get('/contact',[HomeController::class,'contact'])->name('contact');
+Route::get('/',[PathController::class,'home'])->name('home');
+Route::get('/home',[PathController::class,'home'])->name('home');
+Route::get('/about',[PathController::class,'about'])->name('about');
+Route::get('/projects',[PathController::class,'projects'])->name('projects');
+Route::get('/contact',[PathController::class,'contact'])->name('contact');
+
+Route::post('/message',[MessageController::class,'store'])->name('send_message');
