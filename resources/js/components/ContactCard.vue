@@ -4,8 +4,11 @@
                 <img class="p-3" :src="picUrl" :alt="picAlt">
             </div>
             <p class="card-info d-flex justify-content-center align-items-center m-0 text-center">
-                {{ display }}
+                {{ info }}
             </p>
+    </div>
+    <div class="alert floating-message alert-cust-secondary" role="alert" v-if="display">
+        <strong>{{picAlt.toUpperCase()}},  Copied!! </strong>
     </div>
 </template>
 
@@ -15,17 +18,14 @@
         methods: {
             copyInfo(){
                 navigator.clipboard.writeText(this.info);
-                this.display = 'Copied!!'
-                setTimeout(() => { this.display = this.info}, 1000);
+                this.display = true
+                setTimeout(() => { this.display = false}, 2000);
             }
         },
         data() {
             return {
-                display: ''
+                display: false
             }
-        },
-        mounted() {
-            this.display = this.info
         },
     }
 </script>

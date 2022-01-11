@@ -22393,19 +22393,16 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       navigator.clipboard.writeText(this.info);
-      this.display = 'Copied!!';
+      this.display = true;
       setTimeout(function () {
-        _this.display = _this.info;
-      }, 1000);
+        _this.display = false;
+      }, 2000);
     }
   },
   data: function data() {
     return {
-      display: ''
+      display: false
     };
-  },
-  mounted: function mounted() {
-    this.display = this.info;
   }
 });
 
@@ -22450,8 +22447,13 @@ var _hoisted_2 = ["src", "alt"];
 var _hoisted_3 = {
   "class": "card-info d-flex justify-content-center align-items-center m-0 text-center"
 };
+var _hoisted_4 = {
+  key: 0,
+  "class": "alert floating-message alert-cust-secondary",
+  role: "alert"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "card info-card d-flex justify-content-center align-items-center p-4",
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return $options.copyInfo();
@@ -22462,9 +22464,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     alt: $props.picAlt
   }, null, 8
   /* PROPS */
-  , _hoisted_2)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.display), 1
+  , _hoisted_2)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.info), 1
   /* TEXT */
-  )]);
+  )]), $data.display ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.picAlt.toUpperCase()) + ", Copied!! ", 1
+  /* TEXT */
+  )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64
+  /* STABLE_FRAGMENT */
+  );
 }
 
 /***/ }),

@@ -2,8 +2,14 @@
 
 body{
     background-image: url('../../public/images/bg-black.svg');
-    background-size: cover;
+    background-size: auto;
     color: $negative-color;
+}
+
+@media (min-width: 992px){
+    body{
+        background-size: cover;
+    }
 }
 
 .logo{

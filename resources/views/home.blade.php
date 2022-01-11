@@ -13,10 +13,12 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 my-2 my-lg-0 p-0 d-flex justify-content-center justify-content-lg-start">
-                        <button class="main-button">
-                            <span class="pe-2"><img width="18" src="{{ asset('images/download.svg') }}" alt="download-icon"></span>
-                            <span>Download CV</span>
-                        </button>
+                        <a href="https://drive.google.com/file/d/1WakGwTop6F0ocU-TA_Z8U0_3yucCmSWX/view?usp=sharing" target="_blank">
+                            <button class="main-button">
+                                <span class="pe-2"><img width="18" src="{{ asset('images/download.svg') }}" alt="download-icon"></span>
+                                <span>Download CV</span>
+                            </button>
+                        </a>
                     </div>
                     <div class="col-lg-6 my-2 my-lg-0 p-0 d-flex justify-content-center justify-content-lg-start">
                         <a href="{{ route('contact') }}">

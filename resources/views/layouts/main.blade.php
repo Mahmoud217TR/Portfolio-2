@@ -12,7 +12,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script>
         window.addEventListener('load', (event) =>{
-            document.getElementById("loader-layer").classList.add('d-none');
+            document.getElementById("loader-layer").classList.add('fade-5');
         });
     </script>
 
@@ -33,6 +33,7 @@
     </div>
     <div id ="app">
         @include('layouts.nav')
+        @include('layouts.alerts')
         <main class="container">
             @yield('content')
         </main>

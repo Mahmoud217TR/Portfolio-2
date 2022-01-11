@@ -19,7 +19,7 @@ main{
 
 .logo{
     font-family: $logo-font;
-    font-size: 42pt;
+    font-size: 3.5rem;
 }
 
 a{
@@ -212,7 +212,7 @@ h2{
     z-index: 100;
   }
 
-  .loader {
+.loader {
     display: inline-block;
     width: 15rem;
     height: 15rem;
@@ -222,7 +222,7 @@ h2{
     overflow: hidden;
   }
   
-  .loader-inner {
+.loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
@@ -238,18 +238,18 @@ h2{
       }
   }
   
-  .fulfilling-bouncing-circle-spinner, .fulfilling-bouncing-circle-spinner * {
+.fulfilling-bouncing-circle-spinner, .fulfilling-bouncing-circle-spinner * {
     box-sizing: border-box;
   }
 
-  .fulfilling-bouncing-circle-spinner {
+.fulfilling-bouncing-circle-spinner {
     height: 18rem;
     width: 18rem;
     position: absolute;
     animation: fulfilling-bouncing-circle-spinner-animation infinite 4000ms ease;
   }
 
-  .fulfilling-bouncing-circle-spinner .orbit {
+.fulfilling-bouncing-circle-spinner .orbit {
     height: 18rem;
     width: 18rem;
     position: absolute;
@@ -260,7 +260,7 @@ h2{
     animation: fulfilling-bouncing-circle-spinner-orbit-animation infinite 4000ms ease;
   }
 
-  .fulfilling-bouncing-circle-spinner .circle {
+.fulfilling-bouncing-circle-spinner .circle {
     height: 18rem;
     width: 18rem;
     color: $negative-color;
@@ -272,7 +272,7 @@ h2{
     transform: rotate(0deg) scale(1);
   }
 
-  @keyframes fulfilling-bouncing-circle-spinner-animation {
+@keyframes fulfilling-bouncing-circle-spinner-animation {
     0% {
       transform: rotate(0deg);
     }
@@ -282,7 +282,7 @@ h2{
     }
   }
 
-  @keyframes fulfilling-bouncing-circle-spinner-orbit-animation {
+@keyframes fulfilling-bouncing-circle-spinner-orbit-animation {
     0% {
       transform: scale(1);
     }
@@ -303,7 +303,7 @@ h2{
     }
   }
 
-  @keyframes fulfilling-bouncing-circle-spinner-circle-animation {
+@keyframes fulfilling-bouncing-circle-spinner-circle-animation {
     0% {
       transform: scale(1);
       border-color: transparent;
@@ -344,18 +344,18 @@ h2{
     }
   }
 
-  .form-control{
+.form-control{
       line-height: 2.2rem;
       border: .125rem solid $main-color;
       position: relative;
   }
 
-  .form-control:focus{
+.form-control:focus{
       border-color: $main-color!important;
       box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
   }
 
-  .form-control:not(:placeholder-shown) ~ label{   
+.form-control:not(:placeholder-shown) ~ label{   
         position: absolute;
         top: -.75rem;
         left: 1.5rem;
@@ -364,16 +364,16 @@ h2{
         opacity: 1;
   }
 
-  .text-control{
+.text-control{
     resize: none;
     height: 12rem;
   }
 
-  .floating-control{
+.floating-control{
       position: relative;
   }
 
-  .floating-label{
+.floating-label{
       position: absolute;
       opacity: 0;
       top: 1rem;
@@ -382,3 +382,60 @@ h2{
       padding: 0 0.25rem;
       transition: 0.3s linear ease-in;
   }
+
+.floating-message{
+  position: fixed;
+  opacity: 0;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  animation: opa0 6000ms ease;
+  visibility: hidden;
+  @keyframes opa0 {
+    0%{
+      opacity: 1;
+      visibility: visible;
+    }
+    75%{
+      opacity: 1;
+      visibility: visible;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+.fade-5{
+  opacity: 0;
+  animation: opa5 300ms ease;
+  visibility: hidden;
+  @keyframes opa5 {
+    0%{
+      opacity: 1;
+      visibility: visible;
+    }
+    50%{
+      opacity: 1;
+      visibility: visible;
+    }
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+.alert-main{
+    color: $main-color;
+    background-color: $negative-color;
+    border-color: $main-color;
+}
+
+.alert-cust-secondary{
+  color: $main-color;
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}

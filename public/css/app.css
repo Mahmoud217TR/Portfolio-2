@@ -11828,7 +11828,7 @@ main {
 
 .logo {
   font-family: "Lobster", cursive;
-  font-size: 42pt;
+  font-size: 3.5rem;
 }
 
 a {
@@ -12286,4 +12286,91 @@ h2, .h2 {
   background-color: #f8fafc;
   padding: 0 0.25rem;
   transition: 0.3s linear ease-in;
+}
+
+.floating-message {
+  position: fixed;
+  opacity: 0;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  -webkit-animation: opa0 6000ms ease;
+          animation: opa0 6000ms ease;
+  visibility: hidden;
+}
+@-webkit-keyframes opa0 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  75% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes opa0 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  75% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fade-5 {
+  opacity: 0;
+  -webkit-animation: opa5 300ms ease;
+          animation: opa5 300ms ease;
+  visibility: hidden;
+}
+@-webkit-keyframes opa5 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes opa5 {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.alert-main {
+  color: #000;
+  background-color: #f8fafc;
+  border-color: #000;
+}
+
+.alert-cust-secondary {
+  color: #000;
+  background-color: #FFD700;
+  border-color: #FFD700;
 }
