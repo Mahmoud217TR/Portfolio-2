@@ -1,8 +1,8 @@
-@extends('layouts.secondary')
+@extends('layouts.app',['style'=>'secondary'])
 @section('title','About')
 @section('content')
     <div class="row pt-5 pb-5">
-        <div class="col px-4">
+        <div class="col px-4 d-flex justify-content-center justify-content-sm-start">
             <div class="heading">
                 <h1>ABOUT</h1>
             </div>          

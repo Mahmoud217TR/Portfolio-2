@@ -17,9 +17,14 @@
     </script>
 
     <!-- Styles -->
-    <link href="{{ asset('css/secondary.css') }}" rel="stylesheet">
+    @if ($style == 'main')
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    @else
+        <link href="{{ asset('css/secondary.css') }}" rel="stylesheet">
+    @endif
+    
     <link rel="shortcut icon" href="{{ asset('images/mtr.ico') }}" type="image/x-icon">
-
+    
 </head>
 <body>
     <div class="loader-layer" id="loader-layer">
@@ -32,7 +37,7 @@
         </div>
     </div>
     <div id ="app">
-        @include('layouts.nav')
+        @include('layouts.nav',['style'=>$style])
         @include('layouts.alerts')
         <main class="container">
             @yield('content')

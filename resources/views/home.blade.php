@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.app',['style'=>'main'])
 @section('title','MahmoudTR')
 @section('content')
     <div class="row">

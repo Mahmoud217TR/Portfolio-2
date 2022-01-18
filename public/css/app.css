@@ -11863,8 +11863,8 @@ a:hover {
 
 .main-button {
   padding: 0.5rem 0.75rem;
-  background: #000000;
-  border: 0.125rem solid #FFFFFF;
+  background: #000;
+  border: 0.125rem solid #f8fafc;
   box-sizing: border-box;
   border-radius: 0.25rem;
   color: #f8fafc;
@@ -11878,7 +11878,7 @@ a:hover {
   border: 0.125rem solid #FFD700;
   box-sizing: border-box;
   border-radius: 0.25rem;
-  color: #f8fafc;
+  color: #000;
   font-size: 14pt;
   font-weight: bold;
 }
@@ -11893,7 +11893,7 @@ footer hr {
 
 .footer-display {
   font-family: "Lobster", cursive;
-  font-size: 36pt;
+  font-size: 1.4rem;
 }
 
 .footer-display strong {
@@ -11908,10 +11908,9 @@ footer hr {
 }
 
 .heading {
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
   position: relative;
 }
-
 .heading h1, .heading .h1 {
   font-weight: bold;
 }
@@ -11922,7 +11921,7 @@ footer hr {
   height: 3.75rem;
   width: 5rem;
   position: absolute;
-  top: -15%;
+  top: -35%;
   left: -1.5rem;
   z-index: -100;
 }
@@ -12373,4 +12372,29 @@ h2, .h2 {
   color: #000;
   background-color: #FFD700;
   border-color: #FFD700;
+}
+
+@media (min-width: 992px) {
+  .footer-display {
+    font-size: 3rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .footer-display {
+    font-size: 2rem;
+  }
+
+  .heading {
+    letter-spacing: 0.75rem;
+  }
+  .heading h1::before, .heading .h1::before {
+    content: "";
+    top: -15% !important;
+  }
+}
+@media (min-width: 576px) {
+  .heading h1::before, .heading .h1::before {
+    content: "";
+    top: -20%;
+  }
 }

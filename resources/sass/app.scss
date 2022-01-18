@@ -54,8 +54,8 @@ a:hover{
 
 .main-button{
     padding: 0.5rem 0.75rem;
-    background: #000000;
-    border: 0.125rem solid #FFFFFF;
+    background: $main-color;
+    border: 0.125rem solid $negative-color;
     box-sizing: border-box;
     border-radius: 0.25rem;
     color: $negative-color;
@@ -65,11 +65,11 @@ a:hover{
 
 .secondary-button{
     padding: 0.5rem 0.75rem;
-    background: #FFD700;
-    border: 0.125rem solid #FFD700;
+    background: $secondary-color;
+    border: 0.125rem solid $secondary-color;
     box-sizing: border-box;
     border-radius: 0.25rem;
-    color: $negative-color;
+    color: $main-color;
     font-size: $button-font-size;
     font-weight: bold;
 }
@@ -84,7 +84,7 @@ footer hr{
 
 .footer-display{
     font-family: $logo-font;
-    font-size: 36pt;
+    font-size: 1.4rem;
 }
 
 .footer-display strong{
@@ -101,11 +101,8 @@ footer hr{
 }
 
 .heading{
-    letter-spacing: .75rem;
+    letter-spacing: .5rem;
     position: relative;
-}
-
-.heading{
     h1{
         font-weight: bold;
     }
@@ -116,7 +113,7 @@ footer hr{
         height: 3.75rem;
         width: 5rem;
         position: absolute;
-        top:-15%;
+        top:-35%;
         left:-1.5rem;
         z-index: -100;
     }
@@ -439,3 +436,41 @@ h2{
   background-color: $secondary-color;
   border-color: $secondary-color;
 }
+
+// BreakPoints
+
+// Large Breakpoint
+@media (min-width: 992px){
+  .footer-display{
+    font-size: 3rem!important;
+  }
+  
+}
+
+// Medium Breakpoint
+@media (min-width: 768px){
+  .footer-display{
+    font-size: 2rem;
+  }
+
+  .heading{
+    letter-spacing: .75rem;
+    h1::before{
+        content: '';
+        top: -15% !important;
+    }
+  }
+}
+
+// Small Breakpoint
+@media (min-width: 576px){
+
+  .heading{
+    
+    h1::before{
+        content: '';
+        top:-20%;
+    }
+  }
+}
+
