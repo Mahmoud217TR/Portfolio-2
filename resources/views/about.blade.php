@@ -124,7 +124,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 my-2 my-md-0">
+        <div class="col-lg-3 my-2 my-lg-0">
             <div class="card p-3">
                 <div class="card-image d-flex justify-content-center align-items-center">
                     <img class="p-3" src="{{ asset('images/python.svg') }}" alt="laravel-icon">

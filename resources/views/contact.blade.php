@@ -16,7 +16,7 @@
 <div class="row mt-3">
     <div class="col px-3 px-sm-0">
         <p class="text-muted">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa corrupti minima itaque dolorem quaerat non sit facilis dolores quasi pariatur totam velit soluta molestias rem iusto perspiciatis quas, voluptates eum sapiente enim hic consequuntur quae iste! Aliquid nobis praesentium provident quo. Tempore, ducimus consequuntur? Aliquid ullam maiores nam necessitatibus nesciunt velit explicabo asperiores, ducimus aut earum recusandae, praesentium odit rerum officiis impedit magnam provident esse suscipit ipsam ipsa quam natus minus nemo? Reprehenderit et eveniet ut, quo ipsum quibusdam eaque excepturi nostrum commodi ipsa quia sed reiciendis rerum beatae quos ex facilis inventore amet? Accusamus velit iure corporis aliquid doloribus.
+            So the question is where you can find me?<br>If you have a job offer, you want to contact me,or if you have anything to say you can reach me on the following contacts.
         </p>
     </div>
 </div>
