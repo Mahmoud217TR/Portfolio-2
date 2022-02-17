@@ -11863,11 +11863,11 @@ a:hover {
 
 .main-button {
   padding: 0.5rem 0.75rem;
-  background: #000;
-  border: 0.125rem solid #f8fafc;
+  background: #000000;
+  border: 0.125rem solid #F8FAFC;
   box-sizing: border-box;
   border-radius: 0.25rem;
-  color: #f8fafc;
+  color: #F8FAFC;
   font-size: 14pt;
   font-weight: bold;
 }
@@ -11878,13 +11878,13 @@ a:hover {
   border: 0.125rem solid #FFD700;
   box-sizing: border-box;
   border-radius: 0.25rem;
-  color: #000;
+  color: #191A1F;
   font-size: 14pt;
   font-weight: bold;
 }
 
 footer {
-  color: #000;
+  color: #000000;
 }
 
 footer hr {
@@ -11932,15 +11932,15 @@ h2, .h2 {
 }
 
 .card {
-  background-color: #000;
-  color: #f8fafc;
+  background-color: #000000;
+  color: #F8FAFC;
   border-radius: 0.25rem;
 }
 .card .card-image {
   width: 8rem;
   height: 8rem;
   margin: 0 auto;
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
   border-radius: 50%;
 }
 .card .card-image img {
@@ -11996,7 +11996,7 @@ h2, .h2 {
 }
 .info-card:hover .card-info {
   opacity: 1;
-  color: #000;
+  color: #000000;
   transform: scale(1.4);
 }
 .info-card:hover .card-image {
@@ -12010,7 +12010,7 @@ h2, .h2 {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12023,7 +12023,7 @@ h2, .h2 {
   height: 15rem;
   position: relative;
   border-radius: 50%;
-  border: 4px solid #f8fafc;
+  border: 4px solid #F8FAFC;
   overflow: hidden;
 }
 
@@ -12032,7 +12032,7 @@ h2, .h2 {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
   background-image: url(/images/mtr.svg?866e90047770e2c15f198db94a5de507);
   background-size: cover;
   -webkit-animation: loader-inner 1s ease-in;
@@ -12075,7 +12075,7 @@ h2, .h2 {
   top: 0;
   left: 0;
   border-radius: 50%;
-  border: 0.54rem solid #f8fafc;
+  border: 0.54rem solid #F8FAFC;
   -webkit-animation: fulfilling-bouncing-circle-spinner-orbit-animation infinite 4000ms ease;
           animation: fulfilling-bouncing-circle-spinner-orbit-animation infinite 4000ms ease;
 }
@@ -12083,11 +12083,11 @@ h2, .h2 {
 .fulfilling-bouncing-circle-spinner .circle {
   height: 18rem;
   width: 18rem;
-  color: #f8fafc;
+  color: #F8FAFC;
   display: block;
   border-radius: 50%;
   position: relative;
-  border: 1.8rem solid #f8fafc;
+  border: 1.8rem solid #F8FAFC;
   -webkit-animation: fulfilling-bouncing-circle-spinner-circle-animation infinite 4000ms ease;
           animation: fulfilling-bouncing-circle-spinner-circle-animation infinite 4000ms ease;
   transform: rotate(0deg) scale(1);
@@ -12232,12 +12232,12 @@ h2, .h2 {
 }
 .form-control {
   line-height: 2.2rem;
-  border: 0.125rem solid #000;
+  border: 0.125rem solid #000000;
   position: relative;
 }
 
 .form-control:focus {
-  border-color: #000 !important;
+  border-color: #000000 !important;
   box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 
@@ -12245,7 +12245,7 @@ h2, .h2 {
   position: absolute;
   top: -0.75rem;
   left: 1.5rem;
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
   padding: 0 0.25rem;
   opacity: 1;
 }
@@ -12254,7 +12254,7 @@ h2, .h2 {
   position: absolute;
   top: -0.75rem;
   left: 1.5rem;
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
   padding: 0 0.25rem;
   opacity: 1;
 }
@@ -12263,7 +12263,7 @@ h2, .h2 {
   position: absolute;
   top: -0.75rem;
   left: 1.5rem;
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
   padding: 0 0.25rem;
   opacity: 1;
 }
@@ -12282,7 +12282,7 @@ h2, .h2 {
   opacity: 0;
   top: 1rem;
   left: 1.5rem;
-  background-color: #f8fafc;
+  background-color: #F8FAFC;
   padding: 0 0.25rem;
   transition: 0.3s linear ease-in;
 }
@@ -12363,15 +12363,31 @@ h2, .h2 {
 }
 
 .alert-main {
-  color: #000;
-  background-color: #f8fafc;
-  border-color: #000;
+  color: #000000;
+  background-color: #F8FAFC;
+  border-color: #000000;
 }
 
 .alert-cust-secondary {
-  color: #000;
+  color: #000000;
   background-color: #FFD700;
   border-color: #FFD700;
+}
+
+.svg-main path {
+  fill: #000000 !important;
+}
+
+.svg-secondary path {
+  fill: #FFD700 !important;
+}
+
+.svg-light-main path {
+  fill: #191A1F !important;
+}
+
+.svg-negative path {
+  fill: #F8FAFC !important;
 }
 
 @media (min-width: 992px) {

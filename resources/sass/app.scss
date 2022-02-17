@@ -69,7 +69,7 @@ a:hover{
     border: 0.125rem solid $secondary-color;
     box-sizing: border-box;
     border-radius: 0.25rem;
-    color: $main-color;
+    color: $main-color-light;
     font-size: $button-font-size;
     font-weight: bold;
 }
@@ -435,6 +435,30 @@ h2{
   color: $main-color;
   background-color: $secondary-color;
   border-color: $secondary-color;
+}
+
+.svg-main{
+  path{
+    fill: $main-color!important;
+  }
+}
+
+.svg-secondary{
+  path{
+    fill: $secondary-color!important;
+  }
+}
+
+.svg-light-main{
+  path{
+    fill: $main-color-light!important;
+  }
+}
+
+.svg-negative{
+  path{
+    fill: $negative-color!important;
+  }
 }
 
 // BreakPoints

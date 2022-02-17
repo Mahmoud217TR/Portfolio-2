@@ -5,12 +5,12 @@
     </div>
     
     <div class="d-flex justify-content-center">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-items-container" aria-controls="nav-items-container" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
     
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse" id="nav-items-container">
         <ul class="navbar-nav flex-lg-row ms-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
             <li class="nav-item @if(Route::currentRouteName() == 'home') nav-item-active @endif text-center px-2"><a href="{{ route('home') }}">Home</a></li>
             <li class="nav-item @if(Route::currentRouteName() == 'about') nav-item-active @endif text-center px-2"><a href="{{ route('about') }}">About</a></li>

@@ -10,32 +10,19 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script>
-        window.addEventListener('load', (event) =>{
-            document.getElementById("loader-layer").classList.add('fade-5');
-        });
-    </script>
 
     <!-- Styles -->
     @if ($style == 'main')
-        <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+        <link rel="preload" href="{{ asset('css/main.css') }}" rel="stylesheet">
     @else
-        <link href="{{ asset('css/secondary.css') }}" rel="stylesheet">
+        <link rel="preload" href="{{ asset('css/secondary.css') }}" rel="stylesheet">
     @endif
     
     <link rel="shortcut icon" href="{{ asset('images/mtr.ico') }}" type="image/x-icon">
     
 </head>
 <body>
-    <div class="loader-layer" id="loader-layer">
-        <div class="d-block">
-            <span class="loader mx-auto"><span class="loader-inner"></span></span>
-        </div>
-        <div class="fulfilling-bouncing-circle-spinner">
-            <div class="circle"></div>
-            <div class="orbit"></div>
-        </div>
-    </div>
+    @include('layouts.loader')
     <div id ="app">
         @include('layouts.nav',['style'=>$style])
         @include('layouts.alerts')
