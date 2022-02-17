@@ -13,9 +13,9 @@
 
     <!-- Styles -->
     @if ($style == 'main')
-        <link rel="preload" href="{{ asset('css/main.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     @else
-        <link rel="preload" href="{{ asset('css/secondary.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/secondary.css') }}" rel="stylesheet">
     @endif
     
     <link rel="shortcut icon" href="{{ asset('images/mtr.ico') }}" type="image/x-icon">

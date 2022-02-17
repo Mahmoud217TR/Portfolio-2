@@ -1,6 +1,8 @@
 <script>
     window.addEventListener('load', (event) =>{
-        document.getElementById("loader-layer").classList.add('fade-5');
+        setInterval(() => {
+            document.getElementById("loader-layer").classList.add('fade-5');
+        }, 3000);
     });
 </script>
 <div class="loader-layer" id="loader-layer">
